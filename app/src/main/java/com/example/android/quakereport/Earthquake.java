@@ -10,15 +10,15 @@ public class Earthquake {
     /*
      *private variables global
      */
-    private String mMagnitude;
+    private double mMagnitude;
     private String mLocation;
-    private String mTimeInMs;
+    private long mTimeInMs;
     private String mUrl;
 
     /*
      *public constructor
      */
-    public Earthquake(String magnitude, String location, String timeInMs, String url){
+    public Earthquake(double magnitude, String location, long timeInMs, String url){
         mMagnitude = magnitude;
         mLocation=location;
         mTimeInMs=timeInMs;
@@ -29,7 +29,7 @@ public class Earthquake {
      *public getter methods
      */
 
-    public String getmMagnitude() {
+    public double getmMagnitude() {
         return mMagnitude;
     }
 
@@ -37,7 +37,7 @@ public class Earthquake {
         return mLocation;
     }
 
-    public String getmTimeInMs() {
+    public long getmTimeInMs() {
         return mTimeInMs;
     }
 
