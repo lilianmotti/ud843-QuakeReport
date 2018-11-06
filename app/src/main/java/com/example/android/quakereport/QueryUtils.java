@@ -60,7 +60,7 @@ public final class QueryUtils {
                 double magnitude = properties.getDouble("mag");
                 String location = properties.getString("place");
                 long date = properties.getLong("time");
-                String url = "http";
+                String url = properties.getString("url");
 
                 //create a new earthquake object
                 Earthquake earthquake = new Earthquake(magnitude,location, date, url);
